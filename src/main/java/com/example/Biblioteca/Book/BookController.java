@@ -9,5 +9,6 @@ public class BookController {
         @GetMapping("/boasVindas")
         public String boasVindas(){
             return "Essa é minha primeira mensagem nessa rota!";
+
         }
 }
