@@ -1,6 +1,7 @@
 package com.example.Biblioteca.Book;
 
 import com.example.Biblioteca.Usuarios.UsuarioModel;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -30,5 +31,6 @@ public class BookModel {
 
         //@OneToMany Um tipo de Livro pode ser usado por varios usuários.
         @OneToMany(mappedBy = "books")
+        @JsonIgnore
         private List<UsuarioModel> usuario;
 }
