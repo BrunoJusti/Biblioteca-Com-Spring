@@ -1,4 +1,4 @@
 package com.example.Biblioteca.Loan;
 
-public class LoanRepository {
+public interface LoanRepository {
 }
