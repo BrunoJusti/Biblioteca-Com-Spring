@@ -40,7 +40,6 @@ public class LoanMapper {
         dto.setStatus(model.getStatus());
         dto.setLoanDate(model.getLoanDate());
         dto.setReturnDate(model.getReturnDate());
-
         dto.setBookId(model.getBook().getId());
         dto.setUserId(model.getUsuarioModel().getId());
 

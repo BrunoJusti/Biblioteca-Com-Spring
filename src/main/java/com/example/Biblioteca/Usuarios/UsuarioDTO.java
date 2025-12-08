@@ -1,5 +1,4 @@
 package com.example.Biblioteca.Usuarios;
-import com.example.Biblioteca.Book.BookModel;
 import com.example.Biblioteca.Loan.LoanDTO;
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -18,7 +17,17 @@ public class UsuarioDTO {
         private int idade;
         private String email;
         private String cpf;
-        private List<LoanDTO> loans;
+
+    // Lista contendo ID do empréstimo e ID do livro
+    private List<LoanInfo> loans;
+
+    @Data
+    @AllArgsConstructor
+    @NoArgsConstructor
+    public static class LoanInfo {
+        private Long loanId;
+        private Long bookId;
+    }
 
     }
 

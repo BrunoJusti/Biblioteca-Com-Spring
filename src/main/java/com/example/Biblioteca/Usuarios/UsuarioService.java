@@ -36,6 +36,7 @@ public class UsuarioService {
         UsuarioModel usuario = usuarioMapper.mapEntity(usuarioDTO);
         usuario = usuarioRepository.save(usuario);
         return usuarioMapper.mapDTO(usuario);
+
     }
 
     // Deletar usuário - TEM QUE SER UM método VOID

@@ -42,6 +42,6 @@ public class UsuarioModel {
     private String cpf;
 
     // RELAÇÃO CORRETA: 1 usuário -> vários empréstimos
-    @OneToMany(mappedBy = "usuarioModel")
+    @OneToMany(mappedBy = "usuarioModel", cascade = CascadeType.ALL)
     private List<LoanModel> loans;
 }
